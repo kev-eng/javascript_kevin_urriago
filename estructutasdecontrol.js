@@ -121,12 +121,75 @@ switch (true) {
     console.log("persona con sobrepeso")
     break
 }
-*/
+
 
 // En un almacén se hace un 20% de descuento a los clientes cuya compra supere los $1000, a los demás solo se les hace un 5% de descuento ¿ Cuál será la cantidad que pagara una persona por su compra?
 
 let valor = parseInt(prompt("ingresa el valor de tu compra"));
-let totalapagar
 
-if (valor >= 1000)
-  else if 
+
+if (valor > 1000){
+let totalapagar = 0.80 * valor ;
+alert(totalapagar)
+
+}else if (valor <=1000){
+let totalapagar = 0.95 * valor ;
+  alert(totalapagar)
+}
+
+
+
+// Programa que lea los nombres y edades de dos personas e imprima cuál de ellas tiene más edad.
+
+let nombre1 = prompt("ingresa el nombre");
+let edad1 = parseInt(prompt("ingrsa la edad"));
+let nombre2 = prompt("ingresa el nombre");
+let edad2 = parseInt(prompt("ingrsa la edad"));
+
+if (edad1 > edad2){
+  alert(nombre1)
+}else if(edad2 < edad1){
+  alert(nombre2)
+}
+  
+
+// 11.Leer 2 números; si son iguales que los multiplique, si el primero es mayor que el segundo que los reste y si no que los sume.
+
+let numero1 = parseInt(prompt("ingresa un numero"));
+let numero2 = parseInt(prompt("ingresa un numero"));
+
+
+if (numero1 === numero2){
+  alert (numero1 * numero2)
+}else if (numero1 > numero2){
+  alert (numero1 - numero2)
+}else if(numero1 < numero2){
+ alert (numero1 + numero2)
+}
+
+
+// 13.Escribe un programa que determine si un número ingresado por el usuario es par o impar.
+
+let numero = parseInt(prompt("ingresa un numero"));
+
+if (numero % 2 === 0 ){
+  alert ("es par")
+}else if (numero % 2 === 1){
+  alert("es impar")
+}
+
+
+
+//15.Crea un programa que solicite un número y verifique si es positivo, negativo o igual a cero.
+
+let numero = parseInt(prompt("ingresa un numero"));
+
+if (numero < 0){
+  alert("numero negativo")
+} else if (numero > 0){
+  alert("numero positivo")
+} if (numero === 0){
+  alert("numero igual")
+}
+*/
+
